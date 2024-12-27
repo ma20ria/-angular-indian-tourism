@@ -1,0 +1,11 @@
+
+<div class="container">
+    <div class="row">
+        @for (item of api.getstates(); track item.id){
+            <div class="col">
+                 <app-cards [data]="item"></app-cards> 
+               
+            </div>
+        }
+    </div>
+</div>
